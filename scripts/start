@@ -1,0 +1,10 @@
+#!/bin/bash
+# -----------------------------------------------------------------------------
+# docker-teamspeak-bechof /start script
+#
+# Authors: Matthias Becker, Axel Hoffmann
+# Updated: Feb 5th, 2015
+# -----------------------------------------------------------------------------
+
+# Run the teamspeak server and write logs to the persistent directory /data/logs
+export LD_LIBRARY_PATH=/opt/teamspeak && cd /opt/teamspeak && ./ts3server_linux_amd64 logpath=/data/logs/
