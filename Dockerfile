@@ -22,7 +22,7 @@ USER   root
 ENV    DEBIAN_FRONTEND noninteractive
 
 # Variable for teamspeak download path (change for newer version)
-ENV    TEAMSPEAK_URL http://dl.4players.de/ts/releases/3.0.11.2/teamspeak3-server_linux-amd64-3.0.11.2.tar.gz
+ENV    TEAMSPEAK_URL http://dl.4players.de/ts/releases/3.0.11.3/teamspeak3-server_linux-amd64-3.0.11.3.tar.gz
 
 # Update packet repository and upgrade packages
 RUN    apt-get --yes update; apt-get --yes upgrade
