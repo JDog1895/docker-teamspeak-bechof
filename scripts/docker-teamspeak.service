@@ -1,0 +1,12 @@
+[Unit]
+Description=docker-teamspeak-bechof
+Author=Matthias Becker, Axel Hoffmann
+After=docker.service
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/docker start -a teamspeak
+ExecStop=/usr/bin/docker stop -t 2 teamspeak
+
+[Install]
+WantedBy=multi-user.target
